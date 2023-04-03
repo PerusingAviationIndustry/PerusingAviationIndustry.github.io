@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .marginl{
+    margin-left: 200px;
+  }
+  .margint{
+    margin-top: 130px;
+  }
+  .bg-1 { 
+    background-color: #165092; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #ffffff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f; /* Black Gray */
+    color: #fff;
+  }
+  .container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .navbar-header{
+    font-size: 30px;
+  }
+  .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+    background-color: #f8f8f8;
+  }
+  .navbar-nav li a{
+    color:#fffbfb;
+  }
+  .navbar-nav  li a:hover {
+    color: #165092 !important;
+  }
+  .sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #165092;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 150px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="index.html">PERUSING THE INDIAN AVIATION INDUSTRY</a> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="theProject.html">THE PROJECT</a></li>
+        <li><a href="resources.html">RESOURCES</a></li>
+        <li><a href="aboutUs.html">ABOUT US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="sidenav">
+    <a href="airlines.html">AIRLINES</a>
+    <a href="airlinePlanningProcess.html">AIRLINE PLANNING PROCESS</a>
+    <a href="marketAndEconomics.html">MARKET AND ECONOMICS</a>
+    <a href="alliances.html">ALLIANCES</a>
+    <a href="cargo.html">CARGO</a>
+    <a href="kpisUsed.html">KPI'S USED</a>
+    <a href="analysis.html">ANALYSIS</a>
+    <a href="conclusions.html">CONLUSIONS</a>
+</div>
+
+<div class="container-fluid bg-2 margint marginl text">
+<div>
+  <U><h1>ANALYSIS</h1></U><br><br>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/ASK.png">
+      <img src="kpigraphs/ASK.png" alt="ASK" width="2000" height="1000">
+    </a>
+    <div class="desc">Available Seat <br>Kilometers</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/CASK.png">
+      <img src="kpigraphs/CASK.png" alt="CASK" width="2000" height="1000">
+    </a>
+    <div class="desc"> Cost per Available Seat Kilometers</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/RASK.png">
+      <img src="kpigraphs/RASK.png" alt="RASK" width="2000" height="1000">
+    </a>
+    <div class="desc">Revenue per Available Seat Kilometers</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/RPK.png">
+      <img src="kpigraphs/RPK.png" alt="RPK" width="2000" height="1000">
+    </a>
+    <div class="desc">Revenue Passenger Kilometers</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/PLF.png">
+      <img src="kpigraphs/PLF.png" alt="PLF" width="2000" height="1000">
+    </a>
+    <div class="desc">Passenger Load Factor</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/Net Profit.png">
+      <img src="kpigraphs/Net Profit.png" alt="NET PROFIT" width="2000" height="1000">
+    </a>
+    <div class="desc">Net Profit</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/Operating Expenses.png">
+      <img src="kpigraphs/Operating Expenses.png" alt="OPERATING EXPENSES" width="2000" height="1000">
+    </a>
+    <div class="desc">Operating Expenses</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="kpigraphs/Operating Revenue.png">
+      <img src="kpigraphs/Operating Revenue.png" alt="OPERATING REVENUE" width="2000" height="1000">
+    </a>
+    <div class="desc">Operating Revenue</div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
